@@ -1,68 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Тестовое задание группы компаний [«InnoSTage»](https://innostage-group.ru/) на позицию Frontend React
 
-## Available Scripts
+## Справочник покемонов
 
-In the project directory, you can run:
+### Требования
 
-### `npm start`
+Необходимо реализовать веб приложение «Справочник покемонов».
+Для реализации приложения должен быть использован [pokeapi](https://pokeapi.co/).
+Приложение должно включать в себя следующие функции:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. На главном экране приложения должен отображаться список из 20 покемонов в виде картотеки. Список покемонов должен содержать пагинацию. Изображения для карточек можно взять из https://pokeres.bastionbot.org/images/pokemon/<id\>.png, где id – идентификатор покемона в pokeapi, или же использовать заглушку.
+2. При клике по карточке должен осуществляться переход на экран детальной информации о покемоне. Экран должен включать в себя следующую информацию о покемоне:
+   - Название
+   - Изображение
+   - Тип
+   - Характеристики
+   - Список способностей в виде неупорядоченного списка ссылок. При клике по ссылке должен осуществляться переход на экран детальной информации о способности. Экран должен в себя включать описание способности. Также, необходимо реализовать возможность перехода на предыдущий экран.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Необходимый стек
 
-### `npm test`
+1. TypeScript
+2. React
+3. React-router
+4. CSS/Sass/Less/CSS-In-JS
+5. Redux
+6. Redux-thunk/Redux-saga
+7. Eslint-airbnb
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Доступ к коду и проекту
 
-### `npm run build`
+Исходный код тестового задания необходимо выложить в публичном репозитории (GitHub, GitLab, BitBucket, etc.). Ресурс для деплоя приложения: Heroku или любая другая платформа для хостинга.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Примечание
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Необходимо обратить внимание на качество UI/UX и верстки в целом. Адаптивность итогового решения будет также оценена. Разрешено использовать сторонние UI библиотеки, но компоненты, сверстанные вручную, могут быть оценены дополнительными баллами.
+За тестирование компонент вы получите дополнительные баллы. **Желательно дать обратную связь по затраченному времени на реализацию задания.**
