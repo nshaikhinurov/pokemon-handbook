@@ -1,4 +1,5 @@
 import cx from 'classnames'
+import startCase from 'lodash.startcase'
 import * as R from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
@@ -80,7 +81,7 @@ function PokemonPage({ setPage, setCategory }) {
 								{R.map(ability => (
 									<li key={ability}>
 										<Link className="tag" to={`/abilities/${ability}`}>
-											{capitalize(ability)}
+											{startCase(ability)}
 										</Link>
 									</li>
 								))(pokemonData.abilities)}

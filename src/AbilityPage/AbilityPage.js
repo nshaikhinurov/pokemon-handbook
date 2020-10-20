@@ -49,31 +49,33 @@ function AbilityPage({ setPage, setCategory }) {
 		[ability, setCategory, setPage]
 	)
 
-	return (
-		abilityData && (
-			<>
-				<div className="ability-details">
-					<div className="table">
-						<div>
-							<span>Name</span>
-							<span>{abilityData.name}</span>
-						</div>
-						<div>
-							<span>Id</span>
-							<span>{abilityData.id}</span>
-						</div>
-						<div>
-							<span>Description</span>
-							<span>{abilityData.description}</span>
-						</div>
-						<div>
-							<span>Details</span>
-							<span>{abilityData.details}</span>
-						</div>
+	return abilityData ? (
+		<>
+			<h1>{abilityData.name}</h1>
+
+			<div className="ability-details">
+				<div className="table">
+					<div>
+						<span>Name</span>
+						<span>{abilityData.name}</span>
+					</div>
+					<div>
+						<span>Id</span>
+						<span>{abilityData.id}</span>
+					</div>
+					<div>
+						<span>Description</span>
+						<span>{abilityData.description}</span>
+					</div>
+					<div>
+						<span>Details</span>
+						<span>{abilityData.details}</span>
 					</div>
 				</div>
-			</>
-		)
+			</div>
+		</>
+	) : (
+		<div>Loading...</div>
 	)
 }
 

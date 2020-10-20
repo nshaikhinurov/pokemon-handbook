@@ -1,5 +1,6 @@
 import React from 'react'
 import { Redirect, Route, Switch } from 'react-router-dom'
+import Abilities from '../Abilities/Abilities'
 import AbilityPage from '../AbilityPage/AbilityPage'
 import Breadcrumbs from '../Breadcrumb/Breadcrumbs'
 import PokemonPage from '../PokemonPage/PokemonPage'
@@ -20,6 +21,9 @@ function Content() {
 				</Route>
 				<Route path="/abilities/:ability">
 					<AbilityPage />
+				</Route>
+				<Route path="/abilities">
+					<Abilities />
 				</Route>
 				<Route exact path="/">
 					<Redirect to="/pokemons" />
