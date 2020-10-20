@@ -12,6 +12,7 @@
 /build
 
 # misc
+/psd-templates
 .DS_Store
 .env.local
 .env.development.local

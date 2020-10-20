@@ -1,0 +1,15 @@
+.sidebar {
+	min-width: 150px;
+	border: 1px dashed black;
+	padding: 1em;
+}
+
+.sidebar-link {
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+.sidebar-link.active {
+	font-weight: bold;
+}

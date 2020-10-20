@@ -1,0 +1,139 @@
+.pokemon-details {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	color: black;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.table div:not(:last-of-type) {
+	margin-bottom: 0.5em;
+}
+
+.name {
+	font-weight: bold;
+	text-transform: capitalize;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.table > div {
+	display: flex;
+}
+
+.table > div > span:first-of-type {
+	min-width: 10em;
+	color: gray;
+}
+
+.tags {
+	display: inline-flex;
+	gap: 0.5em;
+}
+
+.type .tags .tag {
+	color: white;
+	background-image: none;
+}
+
+.abilities ul {
+	margin: 0;
+	padding: 0;
+}
+
+.abilities ul li {
+	list-style: none;
+}
+
+.abilities ul li a {
+	text-decoration: none;
+	color: #494949;
+	background-color: lightgray;
+}
+
+.tag {
+	border-radius: 2px;
+	padding: 0 0.5em;
+}
+
+.icon {
+	display: block;
+	border-radius: 100%;
+	height: 30px;
+	width: 30px;
+}
+
+.bug {
+	background: url('/type-icons/bug.svg') no-repeat 50% / 60%, #92bc2c;
+}
+
+.dark {
+	background: url('/type-icons/dark.svg') no-repeat 50% / 60%, #595761;
+}
+
+.dragon {
+	background: url('/type-icons/dragon.svg') no-repeat 50% / 60%, #0c69c8;
+}
+
+.electric {
+	background: url('/type-icons/electric.svg') no-repeat 50% / 60%, #f2d94e;
+}
+
+.fire {
+	background: url('/type-icons/fire.svg') no-repeat 50% / 60%, #fba54c;
+}
+
+.fairy {
+	background: url('/type-icons/fairy.svg') no-repeat 50% / 60%, #ee90e6;
+}
+
+.fighting {
+	background: url('/type-icons/fighting.svg') no-repeat 50% / 60%, #d3425f;
+}
+
+.flying {
+	background: url('/type-icons/flying.svg') no-repeat 50% / 60%, #a1bbec;
+}
+
+.ghost {
+	background: url('/type-icons/ghost.svg') no-repeat 50% / 60%, #5f6dbc;
+}
+
+.grass {
+	background: url('/type-icons/grass.svg') no-repeat 50% / 60%, #5fbd58;
+}
+
+.ground {
+	background: url('/type-icons/ground.svg') no-repeat 50% / 60%, #da7c4d;
+}
+
+.ice {
+	background: url('/type-icons/ice.svg') no-repeat 50% / 60%, #75d0c1;
+}
+
+.normal {
+	background: url('/type-icons/normal.svg') no-repeat 50% / 60%, #a0a29f;
+}
+
+.poison {
+	background: url('/type-icons/poison.svg') no-repeat 50% / 60%, #b763cf;
+}
+
+.psychic {
+	background: url('/type-icons/psychic.svg') no-repeat 50% / 60%, #fa8581;
+}
+
+.rock {
+	background: url('/type-icons/rock.svg') no-repeat 50% / 60%, #c9bb8a;
+}
+
+.steel {
+	background: url('/type-icons/steel.svg') no-repeat 50% / 60%, #5695a3;
+}
+
+.water {
+	background: url('/type-icons/water.svg') no-repeat 50% / 60%, #539ddf;
+}
