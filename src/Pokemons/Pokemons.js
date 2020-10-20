@@ -19,7 +19,7 @@ const mapDispatchToProps = dispatch => ({
 
 function PokemonsPage({ setPage, setCategory }) {
 	const limit = 20
-	const total = 100
+	const total = 893
 	const { search } = useLocation()
 	const searchParams = queryString.parse(search)
 	const currentPageNumber = Number(searchParams.page) || 1
@@ -36,7 +36,7 @@ function PokemonsPage({ setPage, setCategory }) {
 		<>
 			<h1>Pokemons</h1>
 			<div className="pokemon-cards">
-				{R.map(id => <PokemonCard key={id} id={id} />)(R.range(1 + (currentPageNumber - 1) * limit, 1 + currentPageNumber * limit))}
+				{R.map(id => <PokemonCard key={id} id={id} />)(R.range(1 + (currentPageNumber - 1) * limit, 1 + R.min(currentPageNumber * limit, total)))}
 			</div>
 			<Pagination numberOfPages={Math.ceil(total / limit)} />
 		</>

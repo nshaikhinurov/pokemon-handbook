@@ -10,6 +10,8 @@ function Pagination({ numberOfPages }) {
 	const searchParams = queryString.parse(search)
 	const currentPageNumber = Number(searchParams.page) || 1
 
+	const shouldSkip = (i, currentPageNumber, numberOfPages) => !(i === 1 || i === numberOfPages || (currentPageNumber - 1 <= i && i <= currentPageNumber + 1))
+
 	return (
 		<div className="pagination">
 			<Link
@@ -20,15 +22,22 @@ function Pagination({ numberOfPages }) {
 				&lt;
 			</Link>
 
-			{R.map(i => (
-				<Link
-					key={i}
-					className={cx('button', { active: i === currentPageNumber })}
-					to={location => `${location.pathname}?${queryString.stringify({ ...searchParams, page: i })}`}
-				>
-					{i}
-				</Link>
-			))(R.range(1, 1 + numberOfPages))}
+			{R.pipe(
+				R.map(i =>
+					shouldSkip(i, currentPageNumber, numberOfPages) ? (
+						'…'
+					) : (
+						<Link
+							key={i}
+							className={cx('button', { active: i === currentPageNumber })}
+							to={location => `${location.pathname}?${queryString.stringify({ ...searchParams, page: i })}`}
+						>
+							{i}
+						</Link>
+					)
+				),
+				R.dropRepeats
+			)(R.range(1, 1 + numberOfPages))}
 
 			<Link
 				className="button"

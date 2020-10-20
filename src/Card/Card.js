@@ -21,7 +21,7 @@ function PokemonCard({ id }) {
 
 	return (
 		<Link to={`/pokemons/${id}`} className={styles['pokemon-card']}>
-			<Avatar id={id} />
+			<Avatar id={id} alt={pokemonData ? pokemonData.name : ''} />
 			<div className={cx('capitalize', styles['name'])}>{pokemonData ? pokemonData.name : 'Loading'}</div>
 			<span className={styles['types']}>
 				{pokemonData &&
