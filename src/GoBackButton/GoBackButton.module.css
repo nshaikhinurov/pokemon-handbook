@@ -1,0 +1,13 @@
+.button {
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
+	color: gray;
+	margin-bottom: 1em;
+	padding: 0;
+}
+
+.button:focus {
+	outline: none;
+	box-shadow: none;
+}

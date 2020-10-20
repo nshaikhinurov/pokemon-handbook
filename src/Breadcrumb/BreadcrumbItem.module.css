@@ -6,3 +6,7 @@
 .breadcrumb-item a:hover {
 	color: #61dafb;
 }
+
+.breadcrumb-item a[disabled] {
+	pointer-events: none;
+}

@@ -7,6 +7,10 @@
 	justify-content: space-between;
 }
 
+.capitalize {
+	text-transform: capitalize;
+}
+
 .title {
 	font-weight: bold;
 	font-size: 2em;
@@ -26,7 +30,7 @@ header {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	border-bottom: 1px solid black;
+	/* border-bottom: 1px solid black; */
 }
 
 .logo {

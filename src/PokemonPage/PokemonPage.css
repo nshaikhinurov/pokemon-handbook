@@ -11,15 +11,6 @@
 	margin-bottom: 0.5em;
 }
 
-.name {
-	font-weight: bold;
-	text-transform: capitalize;
-	flex-grow: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .table > div {
 	display: flex;
 }
